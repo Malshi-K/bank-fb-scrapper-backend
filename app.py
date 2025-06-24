@@ -15,7 +15,7 @@ app = Flask(__name__)
 # CORS(app)  # Enable CORS for React frontend
 CORS(app, origins=[
     "http://localhost:3000",  # Local development
-    "https://bank-fd-scrapper.vercel.app/",  # Your Vercel domain
+    "https://bank-fd-scrapper.vercel.app",  # Your Vercel domain (no trailing slash)
     "https://*.vercel.app"  # All Vercel apps (temporary)
 ])
 
